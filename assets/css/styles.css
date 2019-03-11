@@ -1,0 +1,38 @@
+body {
+    background-color: lightgrey;
+}
+
+h1,
+h3,
+h4 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.card {
+    padding: 5px;
+}
+
+.container-fluid {
+    background-color: black;
+    border-bottom: solid;
+    border-color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    color: black;
+    background-color: white;
+    text-align: left;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+}

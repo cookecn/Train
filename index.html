@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train API using Firebase</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!--Moment CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--Firebase CDN-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1> Train Station API </h1>
+        <h3> An API for Train Transporation </h3>
+    </div>
+    <br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">Train Selector</div>
+                    <div class="card-body">
+                        <table class="table table-sm table-hover table-light" id='train-table'>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Coming From</th>
+                                    <th scope="col">Going To</th>
+                                    <th scope="col">Hours Traveled</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="formInput" aria-describedby="nameHelp"
+                    placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="name">Start Date</label>
+                <input type="date" class="form-control" id="formInput" aria-describedby="nameHelp"
+                    placeholder="MM/DD/YYYY">
+            </div>
+            <div class="form-group">
+                <label for="name">End Date</label>
+                <input type="date" class="form-control" id="formInput" aria-describedby="nameHelp"
+                    placeholder="MM/DD/YYYY">
+            </div>
+            <div class="form-group">
+                <label for="name">Coming From</label>
+                <input type="name" class="form-control" id="formInput" aria-describedby="nameHelp"
+                    placeholder="New-York, NY">
+            </div>
+            <div class="form-group">
+                <label for="name">Going To</label>
+                <input type="name" class="form-control" id="formInput" aria-describedby="nameHelp"
+                    placeholder="Nashville, TN">
+            </div>
+            <button class="btn btn-primary" id="add-train-btn">Submit</button>
+        </form>
+    </div>
+
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer">
+                    <h4> Footer </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/train.js"></script>
+</body>
+
+</html>
