@@ -3,10 +3,15 @@ body {
 }
 
 h1,
-h3,
+h3 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 h4 {
     color: white;
     font-family: 'Ubuntu', sans-serif;
+    text-align: center;
 }
 
 form {
@@ -16,6 +21,11 @@ form {
 
 .card {
     padding: 5px;
+}
+
+.card-header {
+    background-color: lightcyan;
+    color: black;
 }
 
 .container-fluid {
@@ -33,6 +43,6 @@ form {
 }
 
 .footer {
-    color: white;
+    background-color: black;
     text-align: center;
 }
