@@ -31,6 +31,7 @@ $(document).ready(function() {
           $("form")[0].reset();
       });
 
+      //Function for moment.js and adding content to table
       function tableFunction () {
         database.ref().on("child_added", function(childSnapshot) {
           console.log(childSnapshot.val());
@@ -54,8 +55,6 @@ $(document).ready(function() {
             var nextTrain = moment().add(timeUntilTrain, "minutes");
 
             var nextTime = moment(nextTrain).format("hh:mm");
-
-            // $("tbody").append("<tr><td>" + trainNameAdd + "</td><td>" + trainDestinationAdd + "</td><td>" + trainFrequencyAdd + "</td><td>" + nextTime + "</td><td>" + timeUntilTrain + "</td></tr>");
 
             
             //Create the new row
